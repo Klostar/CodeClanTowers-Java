@@ -6,7 +6,6 @@ public class Hotel {
 
     public Hotel() {
         bedrooms = new ArrayList<>();
-
         roomHires = new ArrayList<>();
 
     }
@@ -29,6 +28,10 @@ public class Hotel {
 
     public void addRoomForHire(RoomHire roomHire) {
         roomHires.add(roomHire);
+    }
+
+    public int numberOfBedrooms() {
+        return bedrooms.size();
     }
 //
 //    public int findVacantRooms() {

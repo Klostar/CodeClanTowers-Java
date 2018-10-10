@@ -42,4 +42,7 @@ public class Bedroom {
     }
 
 
+    public String hasRoomType() {
+        return roomType;
+    }
 }

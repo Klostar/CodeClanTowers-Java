@@ -15,6 +15,11 @@ public class BedroomTest {
     }
 
     @Test
+    public void hasRoomType(){
+        assertEquals("Single", bedroom.hasRoomType());
+    }
+
+    @Test
     public void hasRoomNumber(){
         assertEquals(1, bedroom.hasRoomNumber());
     }
