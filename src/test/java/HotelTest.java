@@ -43,4 +43,15 @@ public class HotelTest {
         hotel.addDoubleRoom(doubleRoom);
         assertEquals(1,hotel.numberDoubleRooms());
     }
+
+    @Test
+    public void numberOfRoomsForHire(){
+        assertEquals(0, hotel.numberOfRoomsForHire());
+    }
+
+    @Test
+    public void addRoomForHire(){
+        hotel.addRoomForHire(roomHire);
+        assertEquals(1,hotel.numberOfRoomsForHire());
+    }
 }

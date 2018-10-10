@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class Hotel {
     private ArrayList<SingleRoom> singleRooms;
-    private ArrayList<DoubleRoom>doubleRooms;
-    private ArrayList<RoomHire>roomHires;
+    private ArrayList<DoubleRoom> doubleRooms;
+    private ArrayList<RoomHire> roomHires;
 
-    public Hotel(){
-    singleRooms = new ArrayList<>();
-    doubleRooms = new ArrayList<>();
-    roomHires = new ArrayList<>();
+    public Hotel() {
+        singleRooms = new ArrayList<>();
+        doubleRooms = new ArrayList<>();
+        roomHires = new ArrayList<>();
 
     }
 
@@ -17,9 +17,10 @@ public class Hotel {
     }
 
     public void addSingleRoom(SingleRoom singleRoom) {
-       singleRooms.add(singleRoom);
+        singleRooms.add(singleRoom);
 
     }
+
     public int numberDoubleRooms() {
         return doubleRooms.size();
     }
@@ -28,4 +29,14 @@ public class Hotel {
         doubleRooms.add(doubleRoom);
 
     }
+
+    public int numberOfRoomsForHire() {
+        return roomHires.size();
+    }
+
+
+    public void addRoomForHire(RoomHire roomHire) {
+        roomHires.add(roomHire);
+    }
+
 }
