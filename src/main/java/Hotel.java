@@ -10,11 +10,22 @@ public class Hotel {
     doubleRooms = new ArrayList<>();
     roomHires = new ArrayList<>();
 
-
-
     }
 
     public int numberSingleRooms() {
         return singleRooms.size();
+    }
+
+    public void addSingleRoom(SingleRoom singleRoom) {
+       singleRooms.add(singleRoom);
+
+    }
+    public int numberDoubleRooms() {
+        return doubleRooms.size();
+    }
+
+    public void addDoubleRoom(DoubleRoom doubleRoom) {
+        doubleRooms.add(doubleRoom);
+
     }
 }

@@ -21,10 +21,26 @@ public class HotelTest {
         roomHire = new RoomHire(3,"Meeting Room",15);
         guest = new Guest();
     }
-    
+
     @Test
     public void numberSingleRooms(){
         assertEquals(0, hotel.numberSingleRooms());
     }
 
+    @Test
+    public void addSingleRoom(){
+        hotel.addSingleRoom(singleRoom);
+        assertEquals(1,hotel.numberSingleRooms());
+    }
+
+    @Test
+    public void numberDoubleRooms(){
+        assertEquals(0, hotel.numberDoubleRooms());
+    }
+
+    @Test
+    public void addDoubleRoom(){
+        hotel.addDoubleRoom(doubleRoom);
+        assertEquals(1,hotel.numberDoubleRooms());
+    }
 }
