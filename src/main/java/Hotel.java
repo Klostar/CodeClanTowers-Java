@@ -20,7 +20,6 @@ public class Hotel {
     }
 
 
-
     public int numberOfRoomsForHire() {
         return roomHires.size();
     }
@@ -33,10 +32,17 @@ public class Hotel {
     public int numberOfBedrooms() {
         return bedrooms.size();
     }
-//
-//    public int findVacantRooms() {
-//
-//    }
-//
+
+    public int numberOfVacantRooms() {
+        int vacantRooms = 0;
+        for( Bedroom bedroom : bedrooms){
+            if( bedroom.getBookingStatus()){
+                vacantRooms ++;
+            }
+
+        }
+        return vacantRooms;
+    }
+
 
 }

@@ -45,4 +45,8 @@ public class Bedroom {
     public String hasRoomType() {
         return roomType;
     }
+
+    public boolean getBookingStatus() {
+        return booked;
+    }
 }

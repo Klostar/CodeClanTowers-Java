@@ -53,4 +53,9 @@ public class BedroomTest {
         assertEquals(0, bedroom.numberOfGuests());
 
     }
+
+    @Test
+    public void getBookingStatus(){
+        assertEquals(false , bedroom.getBookingStatus());
+    }
 }
