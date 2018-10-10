@@ -1,34 +1,26 @@
 import java.util.ArrayList;
 
 public class Hotel {
-    private ArrayList<SingleRoom> singleRooms;
-    private ArrayList<DoubleRoom> doubleRooms;
+    private ArrayList<Bedroom> bedrooms;
     private ArrayList<RoomHire> roomHires;
 
     public Hotel() {
-        singleRooms = new ArrayList<>();
-        doubleRooms = new ArrayList<>();
+        bedrooms = new ArrayList<>();
+
         roomHires = new ArrayList<>();
 
     }
 
     public int numberSingleRooms() {
-        return singleRooms.size();
+        return bedrooms.size();
     }
 
-    public void addSingleRoom(SingleRoom singleRoom) {
-        singleRooms.add(singleRoom);
+    public void addBedroom(Bedroom bedroom) {
+        bedrooms.add(bedroom);
 
     }
 
-    public int numberDoubleRooms() {
-        return doubleRooms.size();
-    }
 
-    public void addDoubleRoom(DoubleRoom doubleRoom) {
-        doubleRooms.add(doubleRoom);
-
-    }
 
     public int numberOfRoomsForHire() {
         return roomHires.size();
@@ -38,5 +30,10 @@ public class Hotel {
     public void addRoomForHire(RoomHire roomHire) {
         roomHires.add(roomHire);
     }
+//
+//    public int findVacantRooms() {
+//
+//    }
+//
 
 }

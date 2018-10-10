@@ -5,11 +5,13 @@ public class RoomHire {
     private String type;
     private int dailyRate;
     private ArrayList<Guest> guest;
+    private Boolean booked;
 
     public RoomHire(int capacity, String type , int dailyRate){
         this.capacity = capacity;
         this.type = type;
         this.dailyRate = dailyRate;
+        this.booked = false;
 
     }
 

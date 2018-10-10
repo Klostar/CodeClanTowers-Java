@@ -1,23 +1,25 @@
 import java.util.ArrayList;
 
-public class SingleRoom {
+public class Bedroom {
     private int roomNumber;
     private ArrayList<Guest>guests;
     private int capacity;
     private int dailyRate;
+    private Boolean booked;
+    private String roomType;
 
-    public SingleRoom(int roomNumber){
+    public Bedroom(int roomNumber, int capacity, int dailyRate, String roomType){
         this.roomNumber = roomNumber;
-        this.capacity = 1;
+        this.capacity = capacity;
         this.guests = new ArrayList<>();
-        this.dailyRate = 5;
-
+        this.dailyRate = dailyRate;
+        this.booked = false;
+        this.roomType = roomType;
     }
 
     public int hasRoomNumber() {
         return roomNumber;
     }
-
 
     public int hasCapacity() {
         return capacity;
@@ -38,4 +40,6 @@ public class SingleRoom {
     public void checkOut(Guest guest) {
         guests.remove(guest);
     }
+
+
 }

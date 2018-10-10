@@ -7,8 +7,7 @@ public class HotelTest {
 
 
     Hotel hotel;
-    SingleRoom singleRoom;
-    DoubleRoom doubleRoom;
+    Bedroom bedroom;
     RoomHire roomHire;
     Guest guest;
 
@@ -16,8 +15,7 @@ public class HotelTest {
     public void before(){
 
         hotel = new Hotel();
-        singleRoom = new SingleRoom(1);
-        doubleRoom = new DoubleRoom(2);
+        bedroom = new Bedroom(1,1,5,"Single");
         roomHire = new RoomHire(3,"Meeting Room",15);
         guest = new Guest();
     }
@@ -29,20 +27,11 @@ public class HotelTest {
 
     @Test
     public void addSingleRoom(){
-        hotel.addSingleRoom(singleRoom);
+        hotel.addBedroom(bedroom);
         assertEquals(1,hotel.numberSingleRooms());
     }
 
-    @Test
-    public void numberDoubleRooms(){
-        assertEquals(0, hotel.numberDoubleRooms());
-    }
 
-    @Test
-    public void addDoubleRoom(){
-        hotel.addDoubleRoom(doubleRoom);
-        assertEquals(1,hotel.numberDoubleRooms());
-    }
 
     @Test
     public void numberOfRoomsForHire(){
@@ -54,4 +43,15 @@ public class HotelTest {
         hotel.addRoomForHire(roomHire);
         assertEquals(1,hotel.numberOfRoomsForHire());
     }
+
+//    @Test
+//    public void findVacantRooms(){
+//    hotel.addRoomForHire(roomHire);
+//    hotel.addBedroom(bedroom);
+//
+//    assertEquals(3, hotel.findVacantRooms());
+//
+//
+//    }
+
 }
