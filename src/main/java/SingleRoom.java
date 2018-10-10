@@ -34,4 +34,8 @@ public class SingleRoom {
     public void checkIn(Guest guest){
         guests.add(guest);
     }
+
+    public void checkOut(Guest guest) {
+        guests.remove(guest);
+    }
 }

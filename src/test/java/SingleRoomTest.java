@@ -39,4 +39,13 @@ public class SingleRoomTest {
         singleRoom.checkIn(guest);
         assertEquals(1 , singleRoom.numberOfGuests());
     }
+
+    @Test
+    public void checkOut(){
+        singleRoom.checkIn(guest);
+        assertEquals(1 , singleRoom.numberOfGuests());
+        singleRoom.checkOut(guest);
+        assertEquals(0, singleRoom.numberOfGuests());
+
+    }
 }
