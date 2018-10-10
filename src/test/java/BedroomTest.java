@@ -63,4 +63,6 @@ public class BedroomTest {
     public void changeStatus(){
         assertEquals(true, bedroom.changeStatus());
     }
+//
+//   }
 }

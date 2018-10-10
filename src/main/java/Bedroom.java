@@ -34,7 +34,9 @@ public class Bedroom {
     }
 
     public void checkIn(Guest guest) {
-        guests.add(guest);
+        if (booked ==false) {
+            guests.add(guest);
+        };
     }
 
     public void checkOut(Guest guest) {
