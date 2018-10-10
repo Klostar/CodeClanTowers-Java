@@ -11,4 +11,8 @@ public class Booking {
     public int hasNumberOfDaysBooked() {
         return daysBooked;
     }
+
+    public int roomBill() {
+        return daysBooked * bedroom.hasDailyRate();
+    }
 }
