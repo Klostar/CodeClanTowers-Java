@@ -57,14 +57,6 @@ public class HotelTest {
         assertEquals(2, hotel.numberOfVacantRooms());
     }
 
-//    @Test
-//    public void findVacantRooms(){
-//    hotel.addRoomForHire(roomHire);
-//    hotel.addBedroom(bedroom);
-//
-//    assertEquals(3, hotel.findVacantRooms());
-//
-//
-//    }
+
 
 }
