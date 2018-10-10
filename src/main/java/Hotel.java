@@ -36,7 +36,7 @@ public class Hotel {
     public int numberOfVacantRooms() {
         int vacantRooms = 0;
         for( Bedroom bedroom : bedrooms){
-            if( bedroom.getBookingStatus()){
+            if( bedroom.getBookingStatus()== false){
                 vacantRooms ++;
             }
 
@@ -49,6 +49,7 @@ public class Hotel {
         //create a booking
         //change the booked status to bedroom to true
       Booking booking = new Booking(singleBed,daysBooked);
+      singleBed.changeStatus();
 
       return booking ;
     }

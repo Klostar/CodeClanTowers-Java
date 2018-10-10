@@ -22,22 +22,14 @@ public class HotelTest {
         roomHire = new RoomHire(3,"Meeting Room",15);
         guest = new Guest();
 
-        booking = new Booking(singleBed,2);
+
 
         hotel.addBedroom(singleBed);
         hotel.addBedroom(doubleBed);
+
+        booking = hotel.bookRoom(singleBed,2);
     }
 
-    @Test
-    public void numberSingleRooms(){
-        assertEquals(0, hotel.numberSingleRooms());
-    }
-
-//    @Test
-//    public void addBedRoom(){
-//        hotel.addBedroom(singleBed);
-//        assertEquals(1,hotel.numberSingleRooms());
-//    }
 
     @Test
     public void numberOfRoomsForHire(){
@@ -57,14 +49,14 @@ public class HotelTest {
 
     @Test
     public void numberOfVacantRooms(){
-        assertEquals(2, hotel.numberOfVacantRooms());
+        assertEquals(1, hotel.numberOfVacantRooms());
     }
 
     @Test
     public void bookRoom(){
-        hotel.bookRoom(singleBed,2);
-        assertEquals("true", singleBed.getBookingStatus());
+        assertEquals(true , singleBed.getBookingStatus());
     }
+
 
 
 }
