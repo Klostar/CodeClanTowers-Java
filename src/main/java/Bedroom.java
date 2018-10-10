@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class Bedroom {
     private int roomNumber;
-    private ArrayList<Guest>guests;
+    private ArrayList<Guest> guests;
     private int capacity;
     private int dailyRate;
     private Boolean booked;
     private String roomType;
 
-    public Bedroom(int roomNumber, int capacity, int dailyRate, String roomType){
+    public Bedroom(int roomNumber, int capacity, int dailyRate, String roomType) {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.guests = new ArrayList<>();
@@ -33,7 +33,7 @@ public class Bedroom {
         return guests.size();
     }
 
-    public void checkIn(Guest guest){
+    public void checkIn(Guest guest) {
         guests.add(guest);
     }
 
@@ -48,5 +48,16 @@ public class Bedroom {
 
     public boolean getBookingStatus() {
         return booked;
+    }
+
+    public boolean changeStatus() {
+        if (booked == false) {
+            booked = true;
+        } else {
+            booked = false;
+        }
+
+        return booked;
+
     }
 }

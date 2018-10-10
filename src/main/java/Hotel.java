@@ -45,5 +45,11 @@ public class Hotel {
     }
 
 
+    public Booking bookRoom(Bedroom singleBed, int daysBooked) {
+        //create a booking
+        //change the booked status to bedroom to true
+      Booking booking = new Booking(singleBed,daysBooked);
 
+      return booking ;
+    }
 }

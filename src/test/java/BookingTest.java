@@ -18,5 +18,5 @@ public class BookingTest {
     public void hasNumberOfDaysBooked(){
         assertEquals(2, booking.hasNumberOfDaysBooked());
     }
-    
+
 }
